@@ -1,0 +1,48 @@
+import random
+
+aleatorio = random.randrange(0, 3)
+Pc = ''
+print('1)Piedra')
+print('2)Papel')
+print('3)Tijera')
+print('4)lagarto')
+print('5)spock')
+opcion = int(input('elegir: '))
+
+if opcion == 1: user = 'piedra'
+elif opcion == 2:user = 'papel'
+elif opcion == 3:user = 'tijera'
+elif opcion == 4: user = 'lagarto'
+elif opcion == 5: user = 'spock'
+print('eleji: ', user)
+
+if aleatorio == 0:
+    elijePc = "piedra"
+elif aleatorio == 1:
+    elijePc = "papel"
+elif aleatorio == 2:
+    elijePc = "tijera"
+print("PC elijio: ", elijePc)
+print("...")
+
+if Pc == 'piedra' and user == 'papel':
+    print('Ganaste papel envulve piedra')
+elif Pc == 'papel' and user == 'tijera':
+    print('Ganaste, Tijera corta papel')
+elif Pc == 'Tijera' and user == 'piedra':
+    print('Ganaste Piedra pisa tijera')
+if Pc == 'Papel' and user == 'piedra':
+    print('Perdiste  papel envulve piedra')
+elif Pc == "Tijera" and user  == 'papel':
+    print('Perdiste Tijera corta papel')
+elif Pc == "Piedra" and user == "tijera":
+    print('Perdiste Piedra pisa tijera')
+if Pc == "lagarto" and User == 'spock':
+    print('ganaste spock mata larto')
+elif Pc == 'spcok' and user == 'lagarto':
+   print('Perdiste spcok mata lagarto')
+elif Pc == user:
+    print('Empate')
+
+
+
